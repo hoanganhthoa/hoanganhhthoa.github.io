@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -115,8 +115,8 @@
             </a>
             
             
-            <p> <span style="color: white; background-color: red;font-family: Helvetica;font-size: 20px">BÉ MEO</span> </p>
-           >
+       <p> <span style="color: red;font-family: Lucida Handwriting;font-size:12px">BÉ MEO</span> </p>
+      >
            
             
                 
@@ -130,11 +130,11 @@
     var radius = 240; // Độ rộng vòng xoay
     var autoRotate = true; // Tự động xoay hay không
     var rotateSpeed = -60; // đơn vị: giây/vòng. thời gian để xoay hết 1 vòng, dấu trừ để xoay ngược lại
-    var imgWidth = 120; // độ rộng ảnh (tính theo px)
+    var imgWidth = 100; // độ rộng ảnh (tính theo px)
     var imgHeight = 170; // độ cao ảnh (tính theo px)
     // Link nhạc nền - cho bằng null nếu không muốn nhạc nền
     var bgMusicURL = 'null';
-    var bgMusicControls = false; // Hiện khung điều khiển nhạc nền hay không
+    var bgMusicControls = false; // Hiện khung điều khiển nhạc nền hay khôngfalse
     
     // ===================== start =======================
     setTimeout(init, 100);
@@ -181,6 +181,7 @@
         document.getElementById('music-container').innerHTML += `
             <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} autoplay loop>    
                 <p>If you are reading this, it is because your browser does not support the audio element.</p>
+
             </audio>
         `;
     }
